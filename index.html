@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory</title>
     <script src="Code/script.js"></script>
-    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/syle.css">
 </head>
 <body>
     <h1> Memory </h1>
     <form id="formm">
-        <label> Inserisci la difficoltà </label>
-        <select id="diff" required>
-            <option> </option>    
-            <option value="a"> Facile </option>
-            <option value="b"> Media </option>
-            <option value="c"> Difficile </option>
+        <label> Difficoltà </label>
+        <select id="diff">
+            <option value="0"></option>
+            <option value="2">Facile (2x2)</option>
+            <option value="4">Media (4x4)</option>
+            <option value="6">Difficile (6x6)</option>
         </select>
         <button type="button" onclick="controllo(document.getElementById('diff').value)" id="invia">INVIA</button>
     </form>
     
+    <p id="par"></p>
 </body>
 </html>
